@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(29, 29, 29);
+    color: bisque;
+    font-family: "Noto Sans";
+}
+.navBar a{ 
+    text-decoration: none;
+    color: bisque;
+}
+.navBar a:hover{
+    color: rgb(236, 236, 236);
+    text-decoration: underline;
+    padding: 0px 4px;
+    transition: 1s ease;
+}
+.navBar{
+    display: flex;
+    background-color: rgb(102, 102, 102);
+    align-items: center;
+}
+.navBar ul {
+    padding: 8px 28px;
+    display: flex;
+    list-style: none;
+}
+.navBar ul li{
+    padding: 8px;
+}
+.brand img{
+    padding: 8px 8px;
+    height: 40px;
+    width: 40px;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+.search input{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    /* padding: 10px 8px; */
+  
+}
+.search input::placeholder{
+    padding: 10px 8px;
+    margin: 4px 4px;
+    font-weight: bolder;
+}
+.mainBox{
+    text-align: center;
+    height: 73%;
+    width: 70%;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(95, 92, 89);
+    border-radius: 16px;
+    background: url("bg.jpg");
+    background-size: cover;
+}
+.songBox img{
+    width: 50px;
+    margin: 0 25px;
+    border-radius: 35px;
+}
+.time{
+    margin: 0 23px;
+    cursor: pointer;
+}
+.songBox{
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+    color: rgb(70, 70, 70);
+    font-weight: 600;
+    width:40vw;
+    margin: 10px 0px;
+    padding: 4px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+.boxBottom{
+    color: bisque;
+    position: sticky;
+    bottom: 0;
+    height: 120px;
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.icons i{
+    margin: 8px 0px;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+#songRange{
+    width: 80vw;
+    cursor: pointer;
+  
+}
+.songInfo{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    position: absolute;
+    left:10vw;
+}
+.songInfo img{
+    margin: 20px 0;
+    padding: 10px 7px;
+    opacity: 0;
+    transition: 1s ease;
+}
+/* input[type="range"]{
+    color: rgb(255, 0, 0);
+} */
+
+
+   
